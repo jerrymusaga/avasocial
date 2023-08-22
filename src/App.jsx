@@ -1,4 +1,5 @@
 import ArtWorks from "./components/Artworks"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navigation from "./components/Navigation"
 
@@ -10,6 +11,7 @@ const App = () => {
       <Hero />
     </div>
     <ArtWorks />
+    <Footer />
 
   </div>
   )
