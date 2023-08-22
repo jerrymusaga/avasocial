@@ -1,3 +1,4 @@
+import ArtWorks from "./components/Artworks"
 import Hero from "./components/Hero"
 import Navigation from "./components/Navigation"
 
@@ -8,6 +9,7 @@ const App = () => {
       <Navigation />
       <Hero />
     </div>
+    <ArtWorks />
 
   </div>
   )
