@@ -2,11 +2,10 @@ import React from 'react'
 
 
 const Navigation = () => {
-  
 
   return (
     <div className='w-4/5 flex justify-between md:justify-center items-center py-4 mx-auto'>
-        <div className='md:flex-[0.5] flex-initial justify-center items-center'>
+        <div className='md:flex-[0.5] flex-initial justify-center items-center text-gradient text-5xl font-bold'>
             AvaSocial
         </div>
         <ul className='md:flex-[0.5] text-white md:flex hidden list-none justify-between items-center flex-initial'  >
