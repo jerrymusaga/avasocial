@@ -1,5 +1,6 @@
 import React from 'react'
 import artwork1 from '../images/artwork1.png'
+import { setGlobalState, useGlobalState } from '../store'
 
 const ArtWorks = () => {
     
@@ -32,7 +33,7 @@ const Card = ({nft}) => (
                 <small className='text-xs'>Current Price</small>
                 <p className='text-sm font-semibold'>2.5 Avax</p>
             </div>
-            <button  className='shadow-lg shadow-black text-sm  bg-[#e32970] hover:bg-[#bd255f] rounded-full px-1.5 py-1'>Check Details</button>
+            <button onClick={() => setGlobalState('nftDetailModal', 'scale-100')}  className='shadow-lg shadow-black text-sm  bg-[#e32970] hover:bg-[#bd255f] rounded-full px-1.5 py-1'>Check Details</button>
         </div>
     </div>
 )
