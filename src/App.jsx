@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import MintNFT from "./components/MintNFT"
 import Navigation from "./components/Navigation"
 import NFTDetails from "./components/NFTDetails"
+import UpdateNFT from "./components/UpdateNFT"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
     <Footer />
     <MintNFT />
     <NFTDetails />
+    <UpdateNFT />
 
   </div>
   )
