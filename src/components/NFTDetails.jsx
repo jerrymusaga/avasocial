@@ -56,7 +56,7 @@ const NFTDetails = () => {
                 <div className='flex justify-between items-center space-x-2'>
                     <button className='flex justify-center items-center w-full shadow-lg shadow-black text-white mt-5 font-bold bg-[#e32970] hover:bg-[#bd255f] rounded-full p-2'>Buy NFT</button>
                     <button onClick={onChangePrice} className='flex justify-center items-center w-full shadow-lg shadow-black text-white mt-5 font-bold bg-[#e32970] hover:bg-[#bd255f] rounded-full p-2'>Update NFT Price</button>
-                    <button  className='flex justify-center items-center w-50 shadow-lg shadow-black text-white mt-5 font-bold bg-[#e32970] hover:bg-[#bd255f] rounded-full p-2'><MdOutlineAddReaction /></button>
+                    <button onClick={()=>setGlobalState('reactionModal', 'scale-100')} className='flex justify-center items-center w-50 shadow-lg shadow-black text-white mt-5 font-bold bg-[#e32970] hover:bg-[#bd255f] rounded-full p-2'><MdOutlineAddReaction /></button>
                 </div>
             </div>
         </div>
