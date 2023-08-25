@@ -3,6 +3,7 @@ import {FaTimes} from 'react-icons/fa'
 import artwork1 from '../images/artwork1.png'
 import { setGlobalState, useGlobalState } from '../store'
 import {MdOutlineAddReaction} from 'react-icons/md'
+import Image from 'next/image'
 
 
 const ReactionsModal = () => {
@@ -26,7 +27,7 @@ const ReactionsModal = () => {
                 </div>
                 <div className='flex justify-center items-center rounded-xl mt-5'>
                     <div className='shrink-0 rounded-xl overflow-hidden h-20 w-20'>
-                        <img className='h-full w-full object-cover cursor-pointer' src={artwork1} alt='nft-image'/>
+                        <Image className='h-full w-full object-cover cursor-pointer' src={artwork1} alt='nft-image'/>
                     </div>
                 </div>
                 <p className='flex justify-center items-center font-semibold '>React by sending 0.5avax</p>

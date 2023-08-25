@@ -4,6 +4,7 @@ import artwork1 from '../images/artwork1.png'
 import { setGlobalState, useGlobalState } from '../store'
 import {MdOutlineAddReaction} from 'react-icons/md'
 import Indenticon from 'react-identicons'
+import Image from 'next/image'
 
 
 const NFTDetails = () => {
@@ -32,7 +33,7 @@ const NFTDetails = () => {
                 </div>
                 <div className='flex justify-center items-center rounded-xl mt-5'>
                     <div className='shrink-0 rounded-xl overflow-hidden h-40 w-40'>
-                        <img className='h-full w-full object-cover cursor-pointer' src={artwork1} alt='nft-image'/>
+                        <Image className='h-full w-full object-cover cursor-pointer' src={artwork1} alt='nft-image'/>
                     </div>
                 </div>
                 <div className='flex flex-col justify-start rounded-xl mt-5'>
