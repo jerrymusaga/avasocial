@@ -1,6 +1,7 @@
 import Indenticon from 'react-identicons'
 import header_image from '../images/header.png'
 import { setGlobalState } from '../store'
+import Image from 'next/image'
 
 
 const Hero = () => {
@@ -37,7 +38,7 @@ const Hero = () => {
         </div>
 
         <div className='shadow-xl shadow-black md:w-2/6 w-full mt-10 md:mt-0 rounded-md overflow-hidden bg-gray-800'>
-            <img className='h-80 w-full object-cover' src={header_image} alt='header-image' />
+            <Image width={1000} height={1000} className='h-80 w-full object-cover' src={header_image} alt='header-image' />
             <div className='flex justify-start items-center p-3'>
                 <Indenticon className='h-10 w-10 object-contain rounded-full mr-3'  size={50} />
                 <div>
