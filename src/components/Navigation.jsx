@@ -58,7 +58,7 @@ const Navigation = () => {
                   <li className='mx-4 cursor-pointer'>Token</li>
                   <Image src={ensAvatar} alt="ENS Avatar" />
                   <div>{ensName ? `${ensName} (${truncate(address, 4,4,11)})` : truncate(address, 4,4,11)}</div>
-                  <li className='mx-4 cursor-pointer'>Profile(jerry.eth)</li>
+                  <li className='mx-4 cursor-pointer'>{!ensName ? 'Check ENS status' : null }</li>
                   <button className='shadow-xl shadow-black text-white bg-[#e32970] hover:bg-[#bd255f] md:text-xl p-2 rounded-full' onClick={disconnect}>Disconnect</button>
                 </>
               ) : (
