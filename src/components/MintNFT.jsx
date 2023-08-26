@@ -35,6 +35,17 @@ const MintNFT = () => {
         resetForm()
     }
 
+    const changeImage = async (e) => {
+        const reader = new FileReader()
+        if (e.target.files[0]) reader.readAsDataURL(e.target.files[0])
+    
+        reader.onload = (readerEvent) => {
+          const file = readerEvent.target.result
+          setImgBase64(file)
+          setFileUrl(e.target.files[0])
+        }
+      }
+
   return (
     <div className={`fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50 transform transition-transform duration-300 ${modal}`}>
         <div className='bg-[#151c25] shadow-xl shadow-[#e32970] rounded-xl w-11/12 md:w-2/5 h-7/12 p-6'>
@@ -47,13 +58,13 @@ const MintNFT = () => {
                 </div>
                 <div className='flex justify-center items-center rounded-xl mt-5'>
                     <div className='shrink-0 rounded-xl overflow-hidden h-20 w-20'>
-                        <Image className='h-full w-full object-cover cursor-pointer' src={imgBase64 || artwork1} alt='nft-image'/>
+                        <Image  width={150} height={150} className='h-full w-full object-cover cursor-pointer' src={imgBase64 || artwork1} alt='nft-image'/>
                     </div>
                 </div>
                 <div className='flex justify-between items-center bg-gray-800 rounded-xl mt-5'>
                     <label className='block'>
                         <span className='sr-only'>Choose NFT image</span>
-                        <input className='block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold hover:file:bg-[#1d2631] focus:outline-none cursor-pointer focus:ring-0' type='file' accept='image/png, image/avif, image/gif, image/jpg, image/jpeg, image/webp' required/>
+                        <input onChange={changeImage}  className='block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold hover:file:bg-[#1d2631] focus:outline-none cursor-pointer focus:ring-0' type='file' accept='image/png, image/avif, image/gif, image/jpg, image/jpeg, image/webp' required/> 
                     </label>
                 </div>
                 <div className='flex justify-between items-center bg-gray-800 rounded-xl mt-5'>
