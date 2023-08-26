@@ -1,4 +1,30 @@
-import React from 'react'
+import { useConnect } from 'wagmi'
+
+export function Profile() {
+  const { connect, connectors, error, isLoading, pendingConnector } =
+    useConnect()
+
+  return (
+    <div>
+      {connectors.map((connector) => (
+        <button
+          disabled={!connector.ready}
+          key={connector.id}
+          onClick={() => connect({ connector })}
+        >
+          {connector.name}
+          {!connector.ready && ' (unsupported)'}
+          {isLoading &&
+            connector.id === pendingConnector?.id &&
+            ' (connecting)'}
+        </button>
+      ))}
+
+      {error && <div>{error.message}</div>}
+    </div>
+  )
+}
+
 
 
 const Navigation = () => {
@@ -14,7 +40,7 @@ const Navigation = () => {
             <li className='mx-4 cursor-pointer'>Token</li>
             <li className='mx-4 cursor-pointer'>Profile(jerry.eth)</li>
         </ul>
-        <button className='shadow-xl shadow-black text-white bg-[#e32970] hover:bg-[#bd255f] md:text-xs p-2 rounded-full '>Connect Wallet</button>
+        <button className='shadow-xl shadow-black text-white bg-[#e32970] hover:bg-[#bd255f] md:text-xs p-2 rounded-full '><Profile /></button>
     </div>
   )
 }

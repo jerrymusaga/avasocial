@@ -17,6 +17,8 @@ const MintNFT = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if(!title || !description || !price) return;
+        setGlobalState('loading', { show: true, msg: 'Uploading NFT data...' })
+        
         cancelModal()
     }
 
