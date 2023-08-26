@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { setGlobalState, useGlobalState, setLoadingMsg, truncate } from '../store'
 import Image from 'next/image'
 import {
@@ -29,7 +30,7 @@ export function MetaMask() {
         </button>
       ))}
 
-      {error && <div> {setLoadingMsg(error.message)}</div>}
+      {/* {error && <div> {setLoadingMsg(error.message)}</div>} */}
     </div>
   )
 }

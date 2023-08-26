@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react';
 import artwork1 from '../images/artwork1.png'
 import { setGlobalState, useGlobalState } from '../store'
 import Image from 'next/image'

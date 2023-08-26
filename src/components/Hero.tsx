@@ -1,3 +1,4 @@
+import * as React from 'react';
 import Indenticon from 'react-identicons'
 import header_image from '../images/header.png'
 import { setGlobalState } from '../store'

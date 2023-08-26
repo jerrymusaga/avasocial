@@ -1,4 +1,4 @@
-
+import * as React from 'react';
 import {FaTimes} from 'react-icons/fa'
 import artwork1 from '../images/artwork1.png'
 import { setGlobalState, useGlobalState } from '../store'

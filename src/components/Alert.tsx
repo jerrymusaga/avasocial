@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { FaRegTimesCircle } from "react-icons/fa"
 import {BsCheck2Circle} from "react-icons/bs"
 import { useGlobalState } from "../store"

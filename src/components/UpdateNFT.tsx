@@ -2,7 +2,7 @@ import { useState } from 'react'
 import {FaTimes} from 'react-icons/fa'
 import artwork1 from '../images/artwork1.png'
 import { setGlobalState, useGlobalState } from '../store'
-
+import * as React from 'react';
 
 const UpdateNFT = () => {
     const [price, setPrice] = useState('')

@@ -4,6 +4,7 @@ import artwork1 from '../images/artwork1.png'
 import { setGlobalState, useGlobalState } from '../store'
 import {MdOutlineAddReaction} from 'react-icons/md'
 import Image from 'next/image'
+import * as React from 'react';
 
 
 const ReactionsModal = () => {
