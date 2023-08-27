@@ -14,8 +14,8 @@ import {
 import { SiweMessage } from 'siwe'
 
 export function MetaMask() {
-  const { connect, connectors, error, isLoading, pendingConnector } =
-    useConnect()
+  const { connect, connectors, error, isLoading, pendingConnector } = useConnect();
+  
 
   return (
     <div>
@@ -136,7 +136,7 @@ const Navigation = () => {
                   <li className='mx-4 cursor-pointer'>Token</li>
                   <Image src={ensAvatar} alt="ENS Avatar" />
                   <div>{ensName ? `${ensName} (${truncate(address, 4,4,11)})` : truncate(address, 4,4,11)}</div>
-                  <li className='mx-4 cursor-pointer'>{!ensName ? 'Check ENS ' : null }</li>
+                  
                   <button onClick={signOut} className='shadow-xl shadow-black text-white bg-[#e32970] hover:bg-[#bd255f] md:text-xl p-2 rounded-full' >LogOut</button>
                   <button className='shadow-xl shadow-black text-white bg-[#e32970] hover:bg-[#bd255f] md:text-xl p-2 rounded-full' onClick={disconnect}>Disconnect</button>
                 </>
