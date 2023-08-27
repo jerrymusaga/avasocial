@@ -1,7 +1,10 @@
 
+[video demo](https://youtu.be/qsH-OLNqZNE)
+
 # Avasocial (NFT Marketplace on Avalanche powered by Spruce & ENS)
 ![Screenshot from 2023-08-27 19-21-24](https://github.com/jerrymusaga/avasocial/assets/94830918/79c74f1f-c394-41d9-8358-1c250e518ca8)
 An NFT marketplace on Avalanche powered by SpruceID and ENS (Ethereum Name Service) bringing together the best of both worlds: a high-performance blockchain, robust identity management, and decentralized domain naming.
+![Screenshot from 2023-08-27 19-22-01](https://github.com/jerrymusaga/avasocial/assets/94830918/471875bb-2a3a-4802-90c9-c6253df0931e)
 
 ## Overview
 Avasocial is a cutting-edge NFT marketplace built on the Avalanche blockchain that leverages the secure identity management of SpruceID and the user-friendly domain naming system of ENS. This marketplace aims to provide artists with a seamless and secure platform to mint, buy, react, and showcase NFTs.
