@@ -9,6 +9,7 @@ import Navigation from "../components/Navigation"
 import NFTDetails from "../components/NFTDetails"
 import ReactionsModal from "../components/ReactionsModal"
 import UpdateNFT from "../components/UpdateNFT"
+import CheckENS from "../components/CheckENS"
 
 import { WagmiConfig, createConfig, configureChains, mainnet } from 'wagmi'
 
@@ -49,7 +50,9 @@ const Home = () => {
         <UpdateNFT />
         <ReactionsModal />
         <Loading />
+        {/* <CheckENS /> */}
         <Alert />
+        
 
      </div>
     </WagmiConfig>

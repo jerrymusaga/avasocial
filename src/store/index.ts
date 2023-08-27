@@ -5,6 +5,7 @@ const {setGlobalState, getGlobalState, useGlobalState} = createGlobalState({
     nftDetailModal: 'scale-0',
     updateNFTModal: 'scale-0',
     reactionModal: 'scale-0',
+    checkENSModal: 'scale-0',
     loading: {show: false, msg: ''},
     alert: {show:false, msg:'', color:''},
 });
