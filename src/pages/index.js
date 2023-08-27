@@ -1,3 +1,4 @@
+import * as React from 'react';
 import Alert from "../components/Alert"
 import ArtWorks from "../components/Artworks"
 import Footer from "../components/Footer"
@@ -13,11 +14,9 @@ import { WagmiConfig, createConfig, configureChains, mainnet } from 'wagmi'
 
 import {infuraProvider} from 'wagmi/providers/infura'
 import { publicProvider } from 'wagmi/providers/public'
- 
-import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
-import { InjectedConnector } from 'wagmi/connectors/injected'
+
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
-import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
+
 import { avalancheFuji } from 'wagmi/chains'
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
@@ -29,7 +28,6 @@ const config = createConfig({
   autoConnect: true,
   connectors: [
     new MetaMaskConnector({ chains }),
-    
   ],
   publicClient,
   webSocketPublicClient,

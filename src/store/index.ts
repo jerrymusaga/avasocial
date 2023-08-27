@@ -9,20 +9,20 @@ const {setGlobalState, getGlobalState, useGlobalState} = createGlobalState({
     alert: {show:false, msg:'', color:''},
 });
 
-const setAlert = (msg,color='green') => {
+const setAlert = (msg: string,color='green') => {
     setGlobalState('loading', {show:false,msg:''})
     setGlobalState('alert', {show:true, msg, color})
     setTimeout(() => {
         setGlobalState('alert',{show:false, msg, color})
-    }, 6000)
+    }, 2000)
 }
 
-const setLoadingMsg = (msg) => {
+const setLoadingMsg = (msg: string) => {
     const loading = getGlobalState('loading')
     setGlobalState('loading', {...loading, msg})
 }
 
-const truncate = (text, startChars, endChars, maxLength) => {
+const truncate = (text: string, startChars: number, endChars: number, maxLength: number) => {
     if (text.length > maxLength) {
       var start = text.substring(0, startChars)
       var end = text.substring(text.length - endChars, text.length)
