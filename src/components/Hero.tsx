@@ -18,7 +18,7 @@ const Hero = () => {
             </div>
             <div className='flex mt-5 justify-between'>
                 <button className='shadow-xl shadow-black text-white bg-[#e32970] hover:bg-[#bd255f] rounded-full p-2'  onClick={() =>setGlobalState('modal', 'scale-100')} >Mint NFT</button>
-                <button className='shadow-xl shadow-black text-white bg-[#e32970] hover:bg-[#bd255f] rounded-full p-2'  onClick={() =>setGlobalState('modal', 'scale-100')} >Check ENS status</button>
+                <button className='shadow-xl shadow-black text-white bg-[#e32970] hover:bg-[#bd255f] rounded-full p-2'  onClick={() =>setGlobalState('checkENSModal', 'scale-100')} >Check ENS status</button>
             </div>
             <div>
                 <div className='w-3/4 flex justify-between items-center mt-5'>

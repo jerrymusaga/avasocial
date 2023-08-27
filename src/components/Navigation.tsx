@@ -134,7 +134,7 @@ const Navigation = () => {
                   <li className='mx-4 cursor-pointer'>Market</li>
                   <li className='mx-4 cursor-pointer'>Blog</li>
                   <li className='mx-4 cursor-pointer'>Token</li>
-                  <Image width={50} height={50} h-10 w-10 object-contain rounded-full src={ensAvatar} alt="ENS Avatar" />
+                  <Image src={ensAvatar} alt="ENS Avatar" />
                   <div>{ensName ? `${ensName} (${truncate(address, 4,4,11)})` : truncate(address, 4,4,11)}</div>
                   
                   <button onClick={signOut} className='shadow-xl shadow-black text-white bg-[#e32970] hover:bg-[#bd255f] md:text-xl p-2 rounded-full' >LogOut</button>
