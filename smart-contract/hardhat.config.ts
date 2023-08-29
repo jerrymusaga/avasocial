@@ -1,4 +1,4 @@
-
+require('dotenv').config();
 require("@nomicfoundation/hardhat-toolbox");
 
 const FORK_FUJI = false;
@@ -23,11 +23,11 @@ module.exports = {
   //   apiKey: // ETHERSCAN API KEY HERE,
   // },
   networks: {
-    hardhat: {
-      gasPrice: 225000000000,
-      chainId: !forkingData ? 43112 : undefined, //Only specify a chainId if we are not forking
-      forking: forkingData
-    },
+    // hardhat: {
+    //   gasPrice: 225000000000,
+    //   chainId: !forkingData ? 43112 : undefined, //Only specify a chainId if we are not forking
+    //   forking: forkingData
+    // },
     fuji: {
       url: 'https://api.avax-test.network/ext/bc/C/rpc',
       gasPrice: 225000000000,

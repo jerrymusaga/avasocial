@@ -33,8 +33,8 @@ export function MetaMask() {
             ' (connecting)'}
         </button>
       ))}
-{/* 
-      {error && <div> {setLoadingMsg(error.message)}</div>} */}
+
+      {error && <div> {setLoadingMsg(error.message)}</div>}
     </div>
   )
 }
